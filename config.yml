@@ -1,0 +1,32 @@
+#Reference configuration file
+Actions:
+  - Name: "GoogleChrome"
+    Kind: "msi"
+    Path: "Chrome.msi"
+    Args:
+      - "/norestart"
+  - Name: "BarracudaNAC" #For VPN Users
+    Kind: "msi"
+    Path: "nac.msi"
+    Args:
+      - "/norestart"
+  - Name: "SentinelOne"
+    Kind: "exe"
+    Path: "sentinelone.exe"
+    Args:
+      - "/SITE_TOKEN=" #SentinelOne Token
+      - "/SILENT"
+  - Name: "RASClient"
+    Kind: "msi"
+    Path: "2xclient.msi"
+    Ressources:
+      - "settings.2xc" #Preconfigured RAS Client file
+    Args:
+      - "DEFSETTINGS=${RESPATH}settings.2xc"
+      - "/norestart"
+  - Name: "Office365"
+    Kind: "pwsh"
+    Path: "InstallOffice365.ps1"
+  - Name: "ScreenConnect"
+    Kind: "exe"
+    Path: "ScreenConnect-setup.exe"
