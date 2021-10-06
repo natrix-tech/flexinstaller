@@ -12,7 +12,7 @@ require (
 	github.com/go-swagger/go-swagger v0.26.1 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/spf13/afero v1.5.1 // indirect
-	go.mongodb.org/mongo-driver v1.5.0 // indirect
+	go.mongodb.org/mongo-driver v1.5.1 // indirect
 	golang.org/x/mod v0.4.2 // indirect
 	golang.org/x/net v0.0.0-20210316092652-d523dce5a7f4 // indirect
 	golang.org/x/sys v0.0.0-20210317225723-c4fcb01b228e // indirect
